@@ -8,4 +8,4 @@ Features Include:
 - Using Description rather than Dashboard name for Hyperlinks.
 - Works well with X-Pack or other Security Plugins with limited dashboard access.
 
-##[Kibana](https://www.elastic.co/downloads/past-releases/kibana-6-2-2 "Kibana")
+## [Kibana](https://www.elastic.co/downloads/past-releases/kibana-6-2-2 "Kibana")
