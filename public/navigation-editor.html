@@ -1,0 +1,67 @@
+<div class="form-group">
+  <div class="kuiSideBarFormRow">
+    <label class="kuiSideBarFormRow__label" for="title">
+      Title
+    </label>
+    <div class="kuiSideBarFormRow__control">
+      <input type="text" ng-model="vis.params.title" class="form-control">
+    </div>
+  </div>
+  <div class="kuiSideBarFormRow">
+    <label class="kuiSideBarFormRow__label" for="visualizeNavigationLinkOrder">
+      List Order
+    </label>
+    <div class="kuiSideBarFormRow__control">
+      <select
+        id="navigationLinkOrder"
+        class="form-control"
+        ng-model="vis.params.order"
+        ng-options="position.value as position.text for position in vis.type.editorConfig.ordering"
+      >
+      </select>
+    </div>
+  </div>
+
+  <div class="kuiSideBarFormRow">
+    <label class="kuiSideBarFormRow__label" for="truncateName">
+      Truncate Name
+    </label>
+    <div class="kuiSideBarFormRow__control">
+      <input id="truncateName" type="checkbox" ng-model="vis.params.truncateName">
+    </div>
+  </div>
+  <div class="kuiSideBarFormRow" ng-if="vis.params.truncateName">
+    <label class="kuiSideBarFormRow__label" for="delimiter">
+      Delimiter
+    </label>
+    <div class="kuiSideBarFormRow__control">
+      <input id="delimiter" name="delimiter" type="text" value="{{delimiter}}"
+             class="form-control" ng-model="vis.params.delimiter"
+      >
+    </div>
+  </div>
+  <div class="kuiSideBarFormRow">
+    <label class="kuiSideBarFormRow__label" for="useDescription">
+      Use Description
+    </label>
+    <div class="kuiSideBarFormRow__control">
+      <input id="useDescription" type="checkbox" ng-model="vis.params.useDescription">
+    </div>
+  </div>
+  <div class="kuiSideBarFormRow">
+    <label class="kuiSideBarFormRow__label" for="visualizeNavigationFilter">
+      Filter Dashboards (lowercase only)
+    </label>
+    <div class="kuiSideBarFormRow__control">
+      <input type="text" ng-model="vis.params.filter" class="form-control">
+    </div>
+  </div>
+  <div class="kuiSideBarFormRow">
+    <label class="kuiSideBarFormRow__label" for="visualizeNavigationSize">
+      Max Size
+    </label>
+    <div class="kuiSideBarFormRow__control">
+      <input type="text" ng-model="vis.params.size" class="form-control">
+    </div>
+  </div>
+</div>

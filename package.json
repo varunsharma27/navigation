@@ -1,0 +1,12 @@
+{
+  "name": "navigation",
+  "version": "1.0.0",
+  "kibana": {
+    "version": "6.2.2"
+  },
+  "scripts": {
+    "start": "plugin-helpers start",
+    "build": "plugin-helpers build",
+    "postinstall": "plugin-helpers postinstall"
+  }
+}

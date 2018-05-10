@@ -1,0 +1,7 @@
+<div ng-controller="KbnNavigationVisController" style="width: 100%">
+	<ul class="list-group" >
+	    <li ng-repeat=" dash in listItems" class ="list-group-item euiTableRow" >
+	        <a href="./kibana#/dashboard/{{dash.id}}" style="{{getLinkStyle(dash.id)}}">{{ dash.name }}</a>
+	    </li>
+	</ul>
+</div>
