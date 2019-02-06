@@ -101,7 +101,7 @@ uiModules.get('kibana').controller('KbnNavigationVisController', function ($scop
       $scope.sanitizer($scope.dashboards, false);
     });
     $scope.$watch('vis.params.order', function () {
-      sortList($scope.listItems, true);
+      sortList($scope.listItems);
     });
     $scope.$watch('vis.params.filter', function () {
       search();

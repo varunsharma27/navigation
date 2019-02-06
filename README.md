@@ -10,3 +10,15 @@ Features Include:
 - Works well with X-Pack or other Security Plugins with limited dashboard access.
 
 ## [Kibana](https://www.elastic.co/downloads/past-releases/kibana-6-2-2 "Kibana")
+
+# Build
+To build the plugin on your local, run :
+```
+npm install
+npm run build
+```
+Fill in the kibana version upon prompt.
+Then install the plugin via :-
+```
+./bin/kibana-plugin install file:///path/to/navigation/build/navigation-x.x.x.zip
+```
